@@ -4,7 +4,7 @@
 
 :root {
   --primary: #e99401;
-  --black: #262626;
+  --black: #161616;
   --white: #fff;
   --fuente-principal: "Outfit", sans-serif;
 }
@@ -12,11 +12,13 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   box-sizing: inherit;
 }
+
 body {
   font-size: 2rem;
   font-family: var(--fuente-principal);
@@ -36,5 +38,29 @@ main {
   text-align: center;
   font-weight: 900;
   color: var(--primary);
-  margin: 5rem 0;
+  margin: 3rem 0;
+}
+
+.barra {
+  background: linear-gradient(to right, rgb(0 0 0/0.8), rgb(0 0 0 / 0.5)),
+    url(../public/img/header.jpg) center center / cover;
+  padding: 6rem 2rem;
+}
+.navegacion2 a,
+.navegacion span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* color: var(--white); */
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-bottom: 1.5px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.navegacion span:hover,
+.navegacion2 a:hover,
+.navegacion .active {
+  border-bottom: 1.5px solid var(--primary);
+}
+footer {
+  background-color: var(--black);
 }

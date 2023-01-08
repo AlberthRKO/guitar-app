@@ -12,7 +12,6 @@ const Layout = ({ children, title = "", description = "" }) => {
         <meta name="description" content={description} />
       </Head>
       <Header />
-      <h1>Desde Layout</h1>
       {children}
       <Footer />
     </>

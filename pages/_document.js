@@ -14,6 +14,10 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
       </Head>
       <body>
         <Main />
