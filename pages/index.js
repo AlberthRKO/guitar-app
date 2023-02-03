@@ -8,7 +8,9 @@ export default function Home() {
         title={"Inicio"}
         description={"Blog de música, venta de guitarras y más!"}
       >
-        <h1 className="text-3xl font-bold">Hello world from next</h1>
+        <div className="container text-center py-5 z-10 -mt-10">
+          <h1 className="text-3xl font-bold">Hello world from next</h1>
+        </div>
       </Layout>
     </>
   );
