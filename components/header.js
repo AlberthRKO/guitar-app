@@ -40,8 +40,10 @@ const Header = ({ currentTheme, setTheme }) => {
             <Image
               src="/img/logo.svg"
               alt="Guitar-logo"
-              width={200}
+              width={250}
               height={40}
+              priority={true}
+              className="w-[200px]"
             />
           </span>
         </Link>
@@ -101,13 +103,13 @@ const Header = ({ currentTheme, setTheme }) => {
         </nav>
       </div>
       <svg
-        className="absolute bottom-0 left-0 right-0 w-full "
+        className="absolute bottom-0 left-0 right-0 w-full"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1350 300" //320
       >
         <path
-          fill={currentTheme === "dark" ? "#0F0F0F" : "#f6f9ff"}
-          fill-opacity="1"
+          fill={currentTheme === "dark" ? "#181826" : "#f6f9ff"}
+          fillOpacity="1"
           d="M0,256L48,261.3C96,267,192,277,288,277.3C384,277,480,267,576,250.7C672,235,768,213,864,208C960,203,1056,213,1152,208C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>

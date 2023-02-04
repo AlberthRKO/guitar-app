@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="py-2 bg-white dark:bg-[#161616] border-t-[1px] dark:border-gray-800">
+    <footer className="py-2 bg-white dark:bg-[#212134] border-t-[1px] dark:border-gray-800">
       <div className="container flex flex-col items-center md:flex-row sm:justify-between mx-auto">
         <p className="text-xl font-semibold order-2 md:order-1">
           Todos los derechos reservados{" "}

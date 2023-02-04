@@ -8,11 +8,15 @@
   --white: #fff;
   --fuente-principal: "Outfit", sans-serif;
 }
+.contenidooo {
+  place-items: center stretch !important;
+  place-self: stretch center !important;
+}
 
 body {
   font-family: var(--fuente-principal);
   line-height: 1.5;
-  @apply bg-[#f6f9ff] dark:bg-[#0F0F0F] text-[#4a5568] dark:text-white;
+  @apply bg-[#f6f9ff] dark:bg-[#181826] text-[#4a5568] dark:text-white;
 }
 img {
   max-width: 100%;
@@ -20,7 +24,7 @@ img {
 }
 
 .text-heading {
-  @apply text-3xl sm:text-3xl md:text-4xl font-bold text-[#4a5568] dark:text-[#e99401] text-center;
+  @apply text-3xl sm:text-3xl md:text-4xl font-bold text-[#404974] dark:text-[#e99401] text-center;
 }
 /* [class*="contenedor"],
 main {
