@@ -16,11 +16,11 @@ const Guitar = ({ guitar }) => {
                 alt={`Imagen Guitarra ${name}`}
                 width={500}
                 height={300}
-                className="transition-all w-48 -mt-32 md:mt-0 lg:-mt-16 xl:-mt-28 rotate-90 md:rotate-0 group-hover:scale-105 group-hover:rotate-[88deg] md:group-hover:rotate-12 group-hover:duration-500"
+                className="transition-all w-32 sm:w-48 -mt-24 sm:-mt-32 md:mt-0 lg:-mt-16 xl:-mt-28 rotate-90 md:rotate-0 group-hover:scale-105 group-hover:rotate-[88deg] md:group-hover:rotate-12 group-hover:duration-500"
               />
             </div>
-            <div className="-mt-28 md:mt-0 px-3 pb-5 md:pb-0">
-              <div className="text-start">
+            <div className="-mt-20 sm:-mt-28 md:mt-0 px-3 pb-5 md:pb-0">
+              <div className="text-center md:text-start">
                 <h2 className="text-xl lg:text-3xl font-bold mb-3">{name}</h2>
                 <p className="text-sm lg:text-base mb-2">{description}</p>
                 <p className="font-bold mb-2 text-[#404974] lg:text-xl dark:text-[#e99401]">
