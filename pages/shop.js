@@ -6,14 +6,14 @@ export default function Shop({ guitars }) {
   return (
     <>
       <Layout title={"Tienda"} description={"Tienda de musica, ventas y más!"}>
-        <div className="container py-5 z-10 -mt-10">
+        <main className="container py-5 z-10 -mt-10 lg:-mt-16">
           <h1 className="text-heading pb-5">Tienda de Guitarras</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch">
             {guitars.map((guitar) => (
               <CardGuitar key={guitar.id} guitar={guitar.attributes} />
             ))}
           </div>
-        </div>
+        </main>
       </Layout>
     </>
   );

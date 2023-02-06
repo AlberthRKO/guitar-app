@@ -59,6 +59,48 @@ main {
   padding: 6rem 2rem;
   height: 400px;
 }
+
+.post-capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient(
+    to right,
+    rgba(45, 45, 112, 0.4),
+    rgba(67, 112, 179, 0.1)
+  );
+}
+.dark .dark\:post-capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient(
+    to right,
+    rgba(233, 148, 1, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+.capa-curso {
+  background: linear-gradient(
+    to right,
+    rgba(45, 45, 112, 0.4),
+    rgba(67, 112, 179, 0.5)
+  );
+}
+.dark .dark\:capa-curso {
+  background: linear-gradient(
+    to right,
+    rgba(233, 148, 1, 0.2),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
 .navegacion2 a,
 .navegacion span,
 .navegacion .btnMode {
@@ -75,4 +117,14 @@ main {
 .navegacion .btnMode:hover,
 .navegacion .active {
   border-bottom: 1.5px solid var(--primary);
+}
+
+.card-content {
+  @apply transition-all ease-in-out border-[1px] border-blue-100 dark:border-gray-800 py-4 md:py-0 px-2 rounded-md bg-white dark:bg-[#212134] mb-7 hover:border-transparent dark:hover:border-transparent hover:shadow-md hover:shadow-blue-100 dark:hover:shadow-md dark:hover:shadow-gray-800;
+}
+.card-post {
+  @apply transition-all ease-in-out border-[1px] border-blue-100 dark:border-gray-800 rounded-md bg-white dark:bg-[#212134] hover:border-transparent dark:hover:border-transparent hover:shadow-md hover:shadow-blue-100 dark:hover:shadow-md dark:hover:shadow-gray-800;
+}
+.btn-primary {
+  @apply transition-all rounded-lg ease-in-out py-1 px-3 border-[1px] border-[#404974] dark:border-[#e99401] text-[#404974] dark:text-[#e99401] hover:bg-[#404974] dark:hover:bg-[#e99401] hover:text-white dark:hover:text-white text-sm hover:shadow-lg hover:shadow-[#40497460] dark:hover:shadow-lg dark:hover:shadow-[#e9940128];
 }
